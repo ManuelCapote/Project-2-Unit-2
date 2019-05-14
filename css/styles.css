@@ -1,0 +1,309 @@
+/* Mobile First Responsive Layout */
+/* ======================================
+Base Element Styles 
+======================================== */
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: whitesmoke; 
+    background: #262626;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    margin-top:0.5em;
+}
+
+
+h2 {
+    font-weight: bolder;
+} 
+
+h3 {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0.2px;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: lightgrey;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: tomato;
+}
+
+a:hover {
+    color: #eeeeee;
+}
+
+/* ======================================
+ Base Layout Styles 
+ ======================================== */
+
+/* ------> Navigation <------ */
+
+.name {
+    font-size: 2em;
+    margin: 0; 
+}
+
+.main-nav {
+    margin-top: 5px;
+    list-style-type: none;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+.name,
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+
+.main-nav a {
+    font-size: 1.2em;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: tomato;
+}
+
+.main-nav a:hover {
+    color:#292F36;
+}
+
+.main-nav li {
+    padding: 3px 0;
+}
+
+.main-footer a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.main-footer a:hover {
+    color: tomato;
+}
+
+
+/* ------> Containers <------ */
+.main-header,
+.banner,
+.seventh-main {
+    background-color: #292F36;
+}
+
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.banner {
+    color: whitesmoke;
+    text-align: center;
+    padding: 3.2em 0;
+    margin-bottom: 60px;
+}
+
+#portfolio {
+    text-align: center;
+}
+
+.col {
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+.main-footer {
+    padding: 2em 0;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* ---- Page Elements ---- */
+.seventh-main p {
+    color: darkgray;
+    font-weight: bold;
+}
+
+.back-top {
+    float: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.student-name {
+    float: left;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.bott-main-nav {
+    display: none;
+}
+
+hr {
+    border: 1px solid #eeeeee;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+    body {
+        padding-top: 68px;
+    }
+
+    .main-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .main-nav a {
+        background: tomato;
+    }
+
+    .main-nav {
+        margin: 0%;
+        width: 100%;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .last-cont {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner {
+        vertical-align: top;
+    }
+    .profile-img {
+        float: right;
+        width: 50%;
+        padding: 10px;
+
+    }
+
+    .tagline {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .col {
+    float: left;
+    }
+
+    .first-main,
+    .second-main,
+    .third-main,
+    .fourth-main,
+    .fifth-main,
+    .sixth-main {
+        width: 50%;
+    }
+
+    .seventh-main p {
+        width: 65%;
+        margin: 30px auto;
+
+    }
+
+    .back-top {
+        display: none;
+    }
+
+    .bott-main-nav {
+        display: inline;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .bott-main-nav a {
+        float: right;
+        padding-right: 2em;
+    }
+
+
+
+
+        /* ---- Float clearfix ---- */
+
+        .clearfix::after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+    }
+
+@media (min-width: 1025px) {
+
+    .name {
+    float: left;
+    }
+
+    .main-nav {
+        padding: 10px 15px;
+        text-align: right;
+    }
+
+
+    .container {
+        width: 80%;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
+    .last-cont {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+
+    .first-main,
+    .second-main,
+    .third-main,
+    .fourth-main,
+    .fifth-main,
+    .sixth-main {
+        width: 33.3%;
+    }
+}
