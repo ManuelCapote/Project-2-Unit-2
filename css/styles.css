@@ -17,8 +17,8 @@ body {
 
 p {
     font-size: 1.2em;
-    margin-bottom: 0.5em;
-    margin-top:0.5em;
+    margin-bottom: 1em;
+    margin-top:1em;
 }
 
 
@@ -123,6 +123,7 @@ a:hover {
 
 #portfolio {
     text-align: center;
+    font-size: 2em;
 }
 
 .col {
@@ -172,7 +173,7 @@ hr {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
     body {
         padding-top: 68px;
@@ -241,10 +242,19 @@ hr {
         width: 50%;
     }
 
+    .main p {
+        width: 50%;
+    }
+
     .seventh-main p {
         width: 65%;
         margin: 30px auto;
+    }
 
+
+    .eight-main img {
+        width: 70%;
+        margin: 30px auto;
     }
 
     .back-top {
@@ -262,9 +272,6 @@ hr {
         padding-right: 2em;
     }
 
-
-
-
         /* ---- Float clearfix ---- */
 
         .clearfix::after {
@@ -274,8 +281,11 @@ hr {
         }
     }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
+    .col p {
+        height: 120px;
+    }
     .name {
     float: left;
     }
